@@ -1,0 +1,65 @@
+body {
+background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  );
+  @import url("https://fonts.cdnfonts.com/css/samsung-sharp-sans");
+}
+form {
+  width: 500px;
+}
+fieldset {
+  border: 3px solid greenyellow;
+  border-radius: 10px;
+}
+input:required{
+    border: 2px solid red;
+}
+input:optional{
+    border: 2px solid green;
+}
+input[type="radio"]:checked{
+   height: 20px; 
+   width: 20px;
+
+}
+input[type="radio"] :checked +label{
+    color: yellowgreen;
+}
+input[type="submit"]{
+    border: 3px solid red;
+    border-radius: 10px;
+}
+input[type="reset"]{
+    border: 3px solid red;
+    border-radius: 10px;
+}
+select{
+    cursor: pointer;
+}
+input:focus{
+    background-color: light yellow;
+}
+input[type="text"]+span{
+    display: none;
+}
+input[type="text"]:hover+span{
+    display: inline;
+}
+img{
+    display: none;
+
+}
+
+input[type="email"]:focus:valid ~ img#valid{
+    display: inline;
+  height: 20px;
+  width: 20px;
+
+}
+
+input[type="email"]:focus:invalid ~ img#invalid{
+    display: inline;
+  height: 20px;
+  width: 20px;
+
+}
